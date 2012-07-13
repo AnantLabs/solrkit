@@ -33,7 +33,6 @@ namespace SolrKit
 
         private void btnLoadURL_Click(object sender, EventArgs e)
         {
-            XmlDataDocument xmlDoc = new XmlDataDocument();
             if (!String.IsNullOrEmpty(txtURL.Text))
             {
                 string url = txtURL.Text;
@@ -56,10 +55,11 @@ namespace SolrKit
 
                 // Create the XmlReader object.
                 XmlReader reader = XmlReader.Create(url, settings);
-                
-                dgvSchema.Rows.Clear();
+                XmlDataDocument xmlDoc = new XmlDataDocument();
                 xmlDoc.Load(reader);
+
                 XmlNodeList nodes = xmlDoc.SelectNodes("//field");
+                dgvSchema.Rows.Clear();
                 foreach (XmlNode node in nodes)
                 {
                     XmlAttributeCollection attribs = node.Attributes;
