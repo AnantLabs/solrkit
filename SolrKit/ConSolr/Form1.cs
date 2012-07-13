@@ -101,7 +101,6 @@ namespace SolrKit
                         sb.Append(Regex.Replace(row.Cells[0].Value.ToString().Trim(), "[^a-zA-Z0-9]", "_"));
                         sb.Append("{ get; set; } ");
                         sb.AppendLine();
-                        sb.AppendLine();
                     }
                 }
                 sb.AppendLine("");
