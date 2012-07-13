@@ -61,12 +61,12 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dgvRequest = new System.Windows.Forms.DataGridView();
             this.dgvResponse = new System.Windows.Forms.DataGridView();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.btnLoadURL = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.txtURL = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSchema)).BeginInit();
@@ -105,7 +105,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1050, 393);
+            this.tabPage2.Size = new System.Drawing.Size(1050, 369);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Schema";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -153,6 +153,8 @@
             this.Column9});
             this.dgvSchema.Location = new System.Drawing.Point(3, 3);
             this.dgvSchema.Name = "dgvSchema";
+            this.dgvSchema.ShowCellErrors = false;
+            this.dgvSchema.ShowRowErrors = false;
             this.dgvSchema.Size = new System.Drawing.Size(1044, 328);
             this.dgvSchema.TabIndex = 0;
             // 
@@ -277,7 +279,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1050, 393);
+            this.tabPage1.Size = new System.Drawing.Size(1050, 369);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Query";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -421,7 +423,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1050, 393);
+            this.tabPage3.Size = new System.Drawing.Size(1050, 369);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Analyzer";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -460,6 +462,16 @@
             this.dgvResponse.Name = "dgvResponse";
             this.dgvResponse.Size = new System.Drawing.Size(521, 361);
             this.dgvResponse.TabIndex = 0;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1050, 369);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Configure";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // btnLoadURL
             // 
@@ -510,16 +522,6 @@
             this.label11.Size = new System.Drawing.Size(328, 13);
             this.label11.TabIndex = 7;
             this.label11.Text = "e.g. http://localhost:8983/solr/ or http://myhost.com:8080/SolrAPI/";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1050, 369);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Configure";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
