@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolrKit", "ConSolr\SolrKit.csproj", "{0CD28B06-3938-4A45-8BE8-736CD947B4F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolrKit", "SolrKit\SolrKit.csproj", "{0CD28B06-3938-4A45-8BE8-736CD947B4F7}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
