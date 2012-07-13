@@ -66,6 +66,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.txtURL = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSchema)).BeginInit();
@@ -89,10 +90,11 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(1, 63);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1058, 422);
+            this.tabControl1.Size = new System.Drawing.Size(1058, 398);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage2
@@ -275,7 +277,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1050, 367);
+            this.tabPage1.Size = new System.Drawing.Size(1050, 393);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Query";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -419,7 +421,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1050, 367);
+            this.tabPage3.Size = new System.Drawing.Size(1050, 393);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Analyzer";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -509,6 +511,16 @@
             this.label11.TabIndex = 7;
             this.label11.Text = "e.g. http://localhost:8983/solr/ or http://myhost.com:8080/SolrAPI/";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1050, 369);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Configure";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -580,6 +592,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TabPage tabPage4;
     }
 }
 

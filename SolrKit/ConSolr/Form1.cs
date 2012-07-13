@@ -33,15 +33,14 @@ namespace SolrKit
 
         private void btnLoadURL_Click(object sender, EventArgs e)
         {
-            //http:// localhost:8080/solr/admin/file/?file=schema.xml
-            string url = txtURL.Text;
-            if (!url.Contains("http://")) url = "http://" + url;
-            if(!url.EndsWith("/")) url += "/";
-            
- 
             XmlDataDocument xmlDoc = new XmlDataDocument();
-            if (!String.IsNullOrEmpty(url))
+            if (!String.IsNullOrEmpty(txtURL.Text))
             {
+                string url = txtURL.Text;
+                if (!url.Contains("http://")) url = "http://" + url;
+                if (!url.EndsWith("/")) url += "/";
+                url += "admin/file/?file=schema.xml";
+
                 // Set the reader settings.
                 XmlReaderSettings settings = new XmlReaderSettings();
                 settings.IgnoreComments = true;
@@ -54,7 +53,6 @@ namespace SolrKit
 
                 // Set the reader settings object to use the resolver.
                 settings.XmlResolver = resolver;
-                url += "admin/file/?file=schema.xml";
 
                 // Create the XmlReader object.
                 XmlReader reader = XmlReader.Create(url, settings);
@@ -72,8 +70,6 @@ namespace SolrKit
                     }
                     dgvSchema.Rows.Add(fieldAttribs.ToArray());
                 }
-
-                Startup.Init<SolrDocument>(url);
             }
 
         }
@@ -86,8 +82,6 @@ namespace SolrKit
                 StringBuilder sb = new StringBuilder();
                 //for now we treat the first row as unique key
                 int r = 0;
-                //  public class DodAppDocument
-
                 sb.AppendLine("public class SolrMappingClass");
                 sb.AppendLine("{");
                 sb.AppendLine("");
